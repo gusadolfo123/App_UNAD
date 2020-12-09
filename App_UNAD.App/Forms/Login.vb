@@ -46,4 +46,65 @@
         MyBase.WndProc(m)
     End Sub
 
+    Private Sub txtEmailReg_GotFocus(sender As Object, e As EventArgs) Handles txtEmailReg.GotFocus
+        If Trim(txtEmailReg.Text) = "Correo Institucional" Then
+            txtEmailReg.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtEmailReg_LostFocus(sender As Object, e As EventArgs) Handles txtEmailReg.LostFocus
+        If Trim(txtEmailReg.Text) = "" Then
+            txtEmailReg.Text = "Correo Institucional"
+        End If
+    End Sub
+
+    Private Sub txtDocumentReg_GotFocus(sender As Object, e As EventArgs) Handles txtDocumentReg.GotFocus
+        If Trim(txtDocumentReg.Text) = "Documento" Then
+            txtDocumentReg.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtDocumentReg_LostFocus(sender As Object, e As EventArgs) Handles txtDocumentReg.LostFocus
+        If Trim(txtDocumentReg.Text) = "" Then
+            txtDocumentReg.Text = "Documento"
+        End If
+    End Sub
+
+    Private Sub txtPassReg_GotFocus(sender As Object, e As EventArgs) Handles txtPassReg.GotFocus
+        If Trim(txtPassReg.Text) = "Contraseña" Then
+            txtEmailReg.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtPassReg_LostFocus(sender As Object, e As EventArgs) Handles txtPassReg.LostFocus
+        If Trim(txtPassReg.Text) = "" Then
+            txtEmailReg.Text = "Contraseña"
+        End If
+    End Sub
+
+    Private Sub txtEmail_GotFocus(sender As Object, e As EventArgs) Handles txtEmail.GotFocus
+        If Trim(txtEmail.Text) = "Correo Institucional" Then
+            txtEmail.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtEmail_LostFocus(sender As Object, e As EventArgs) Handles txtEmail.LostFocus
+        If Trim(txtEmail.Text) = "" Then
+            txtEmail.Text = "Correo Institucional"
+        End If
+    End Sub
+
+
+    Private Sub txtPassword_GotFocus(sender As Object, e As EventArgs) Handles txtPassword.GotFocus
+        If Trim(txtPassword.Text) = "Contraseña" Then
+            txtPassword.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtPassword_LostFocus(sender As Object, e As EventArgs) Handles txtPassword.LostFocus
+        If Trim(txtPassword.Text) = "" Then
+            txtPassword.Text = "Contraseña"
+        End If
+    End Sub
+
 End Class
