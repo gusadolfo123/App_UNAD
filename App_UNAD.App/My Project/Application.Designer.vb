@@ -30,9 +30,9 @@ Namespace My
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
 
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.App_UNAD.App.Form1
+            Me.MainForm = Global.App_UNAD.App.Login
         End Sub
     End Class
 End Namespace
