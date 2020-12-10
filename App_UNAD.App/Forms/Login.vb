@@ -9,30 +9,45 @@
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
 
-        If Trim(txtEmailReg.Text) = "" Then
-            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        If Trim(txtEmailReg.Text) = "" Or Trim(txtEmailReg.Text) = "Correo Institucional" Then
+            MessageBox.Show("Debe ingresar un correo", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
 
-        If Trim(txtDocumentReg.Text) = "" Then
-            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        If Trim(txtDocumentReg.Text) = "" Or Trim(txtDocumentReg.Text) = "Documento" Then
+            MessageBox.Show("Debe ingresar un documento", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
 
-        If Trim(txtPassReg.Text) = "" Then
-            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        If Trim(txtPassReg.Text) = "" Or Trim(txtPassReg.Text) = "Contraseña" Then
+            MessageBox.Show("Debe ingresar una contraseña", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
 
         If studentManager.Insert(txtEmailReg.Text, txtDocumentReg.Text, txtPassReg.Text) Then
             MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
-            MessageBox.Show("Error", "No Fue Posible Realizar el registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("No Fue Posible Realizar el registro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If Trim(txtEmail.Text) = "" Or Trim(txtEmail.Text) = "Correo Institucional" Then
+            MessageBox.Show("Debe ingresar un correo", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If Trim(txtPassword.Text) = "" Or Trim(txtPassword.Text) = "Contraseña" Then
+            MessageBox.Show("Debe ingresar una contraseña", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If studentManager.CheckUser(txtEmail.Text, txtPassword.Text) Then
+            MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("Usuario no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
 
     End Sub
 

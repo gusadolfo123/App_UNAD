@@ -10,5 +10,5 @@ CREATE TABLE Student(
 );
 Go 
 INSERT INTO Student(Email, Document, Password) 
-VALUES('morenoga@unadvirtual.com','1022961238','123');
+VALUES('morenoga@unadvirtual.com','1022961238','wgc0A35tNuVdWHjYGbj9+A==');
 
