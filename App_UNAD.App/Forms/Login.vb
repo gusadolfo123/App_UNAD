@@ -1,11 +1,34 @@
 ﻿Public Class Login
 
+    Private studentManager As New StudentManager
+
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pnlRegister.Visible = False
         pnlLogin.Visible = True
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+
+        If Trim(txtEmailReg.Text) = "" Then
+            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If Trim(txtDocumentReg.Text) = "" Then
+            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If Trim(txtPassReg.Text) = "" Then
+            MessageBox.Show("Registro Exitoso", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If studentManager.Insert(txtEmailReg.Text, txtDocumentReg.Text, txtPassReg.Text) Then
+            MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("Error", "No Fue Posible Realizar el registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
 
     End Sub
 
@@ -14,13 +37,13 @@
     End Sub
 
     Private Sub linkLogin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkLogin.LinkClicked
-        pnlLogin.Visible = True
         pnlRegister.Visible = False
+        pnlLogin.Visible = True
     End Sub
 
     Private Sub linkRegister_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkRegister.LinkClicked
-        pnlRegister.Visible = True
         pnlLogin.Visible = False
+        pnlRegister.Visible = True
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -72,13 +95,13 @@
 
     Private Sub txtPassReg_GotFocus(sender As Object, e As EventArgs) Handles txtPassReg.GotFocus
         If Trim(txtPassReg.Text) = "Contraseña" Then
-            txtEmailReg.Text = ""
+            txtPassReg.Text = ""
         End If
     End Sub
 
     Private Sub txtPassReg_LostFocus(sender As Object, e As EventArgs) Handles txtPassReg.LostFocus
         If Trim(txtPassReg.Text) = "" Then
-            txtEmailReg.Text = "Contraseña"
+            txtPassReg.Text = "Contraseña"
         End If
     End Sub
 

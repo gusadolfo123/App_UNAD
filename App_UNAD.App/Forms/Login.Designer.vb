@@ -83,7 +83,7 @@ Partial Class Login
         Me.pnlRegister.Controls.Add(Me.btnRegister)
         Me.pnlRegister.Controls.Add(Me.pictureBox6)
         Me.pnlRegister.Controls.Add(Me.pictureBox7)
-        Me.pnlRegister.Location = New System.Drawing.Point(0, 0)
+        Me.pnlRegister.Location = New System.Drawing.Point(422, 28)
         Me.pnlRegister.Name = "pnlRegister"
         Me.pnlRegister.Size = New System.Drawing.Size(222, 392)
         Me.pnlRegister.TabIndex = 20
@@ -112,6 +112,7 @@ Partial Class Login
         Me.txtPassReg.TabIndex = 15
         Me.txtPassReg.Tag = ""
         Me.txtPassReg.Text = "Contraseña"
+        Me.txtPassReg.UseSystemPasswordChar = True
         '
         'pictureBox8
         '
@@ -226,7 +227,6 @@ Partial Class Login
         '
         'pnlLogin
         '
-        Me.pnlLogin.Controls.Add(Me.pnlRegister)
         Me.pnlLogin.Controls.Add(Me.linkRegister)
         Me.pnlLogin.Controls.Add(Me.lblErros)
         Me.pnlLogin.Controls.Add(Me.checkBox1)
@@ -287,6 +287,7 @@ Partial Class Login
         Me.txtPassword.TabIndex = 11
         Me.txtPassword.Tag = ""
         Me.txtPassword.Text = "Contraseña"
+        Me.txtPassword.UseSystemPasswordChar = True
         '
         'pictureBox4
         '
@@ -350,6 +351,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
         Me.BackgroundImage = Global.App_UNAD.App.My.Resources.Resources.Formulario1
         Me.ClientSize = New System.Drawing.Size(688, 449)
+        Me.Controls.Add(Me.pnlRegister)
         Me.Controls.Add(Me.pnlLogin)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.label1)
