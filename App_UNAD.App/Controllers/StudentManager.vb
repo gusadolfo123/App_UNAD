@@ -34,7 +34,6 @@ Public Class StudentManager
                 If result IsNot Nothing Then
                     Return True
                 End If
-
             End Using
             Return False
         Catch ex As Exception

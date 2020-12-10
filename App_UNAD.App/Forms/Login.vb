@@ -44,7 +44,10 @@
         End If
 
         If studentManager.CheckUser(txtEmail.Text, txtPassword.Text) Then
-            MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            'MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim main = FrmMain.GetInstance()
+            main.Show()
+            Me.Hide()
         Else
             MessageBox.Show("Usuario no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
