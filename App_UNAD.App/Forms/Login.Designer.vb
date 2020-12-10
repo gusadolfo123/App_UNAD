@@ -39,7 +39,6 @@ Partial Class Login
         Me.pnlLogin = New System.Windows.Forms.Panel()
         Me.linkRegister = New System.Windows.Forms.LinkLabel()
         Me.lblErros = New System.Windows.Forms.Label()
-        Me.checkBox1 = New System.Windows.Forms.CheckBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.pictureBox4 = New System.Windows.Forms.PictureBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
@@ -83,7 +82,7 @@ Partial Class Login
         Me.pnlRegister.Controls.Add(Me.btnRegister)
         Me.pnlRegister.Controls.Add(Me.pictureBox6)
         Me.pnlRegister.Controls.Add(Me.pictureBox7)
-        Me.pnlRegister.Location = New System.Drawing.Point(422, 28)
+        Me.pnlRegister.Location = New System.Drawing.Point(419, 23)
         Me.pnlRegister.Name = "pnlRegister"
         Me.pnlRegister.Size = New System.Drawing.Size(222, 392)
         Me.pnlRegister.TabIndex = 20
@@ -229,7 +228,6 @@ Partial Class Login
         '
         Me.pnlLogin.Controls.Add(Me.linkRegister)
         Me.pnlLogin.Controls.Add(Me.lblErros)
-        Me.pnlLogin.Controls.Add(Me.checkBox1)
         Me.pnlLogin.Controls.Add(Me.txtPassword)
         Me.pnlLogin.Controls.Add(Me.pictureBox4)
         Me.pnlLogin.Controls.Add(Me.txtEmail)
@@ -262,18 +260,6 @@ Partial Class Login
         Me.lblErros.Name = "lblErros"
         Me.lblErros.Size = New System.Drawing.Size(0, 17)
         Me.lblErros.TabIndex = 13
-        '
-        'checkBox1
-        '
-        Me.checkBox1.AutoSize = True
-        Me.checkBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkBox1.ForeColor = System.Drawing.Color.White
-        Me.checkBox1.Location = New System.Drawing.Point(3, 267)
-        Me.checkBox1.Name = "checkBox1"
-        Me.checkBox1.Size = New System.Drawing.Size(92, 19)
-        Me.checkBox1.TabIndex = 12
-        Me.checkBox1.Text = "Recordarme"
-        Me.checkBox1.UseVisualStyleBackColor = True
         '
         'txtPassword
         '
@@ -394,7 +380,6 @@ Partial Class Login
     Private WithEvents pnlLogin As Panel
     Private WithEvents linkRegister As LinkLabel
     Private WithEvents lblErros As Label
-    Private WithEvents checkBox1 As CheckBox
     Private WithEvents txtPassword As TextBox
     Private WithEvents pictureBox4 As PictureBox
     Private WithEvents txtEmail As TextBox

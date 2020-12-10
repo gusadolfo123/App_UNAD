@@ -31,16 +31,12 @@ Partial Class FrmMain
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblNameUser = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.pnlProgress = New System.Windows.Forms.Panel()
-        Me.progressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.label1 = New System.Windows.Forms.Label()
         Me.pnlHeader = New System.Windows.Forms.Panel()
         Me.button1 = New System.Windows.Forms.Button()
         Me.pnlPrimary = New System.Windows.Forms.Panel()
         Me.pnlMenu.SuspendLayout()
         Me.panel2.SuspendLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlProgress.SuspendLayout()
         Me.pnlHeader.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -78,9 +74,9 @@ Partial Class FrmMain
         Me.pnlMenu.Controls.Add(Me.panel2)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.ForeColor = System.Drawing.Color.White
-        Me.pnlMenu.Location = New System.Drawing.Point(0, 65)
+        Me.pnlMenu.Location = New System.Drawing.Point(0, 27)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(200, 565)
+        Me.pnlMenu.Size = New System.Drawing.Size(200, 727)
         Me.pnlMenu.TabIndex = 3
         '
         'btnExit
@@ -97,7 +93,7 @@ Partial Class FrmMain
         Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnExit.IconSize = 34
         Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 505)
+        Me.btnExit.Location = New System.Drawing.Point(0, 667)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
         Me.btnExit.Size = New System.Drawing.Size(200, 60)
@@ -191,44 +187,12 @@ Partial Class FrmMain
         Me.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblTitle.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(0, 65)
+        Me.lblTitle.Location = New System.Drawing.Point(0, 27)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(1008, 565)
+        Me.lblTitle.Size = New System.Drawing.Size(1340, 727)
         Me.lblTitle.TabIndex = 4
         Me.lblTitle.Text = "Inicio"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlProgress
-        '
-        Me.pnlProgress.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(115, Byte), Integer))
-        Me.pnlProgress.Controls.Add(Me.progressBar1)
-        Me.pnlProgress.Controls.Add(Me.label1)
-        Me.pnlProgress.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlProgress.ForeColor = System.Drawing.Color.White
-        Me.pnlProgress.Location = New System.Drawing.Point(0, 27)
-        Me.pnlProgress.Name = "pnlProgress"
-        Me.pnlProgress.Size = New System.Drawing.Size(1008, 38)
-        Me.pnlProgress.TabIndex = 6
-        '
-        'progressBar1
-        '
-        Me.progressBar1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.progressBar1.Location = New System.Drawing.Point(104, 12)
-        Me.progressBar1.Name = "progressBar1"
-        Me.progressBar1.Size = New System.Drawing.Size(867, 13)
-        Me.progressBar1.TabIndex = 2
-        '
-        'label1
-        '
-        Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(16, 9)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(82, 16)
-        Me.label1.TabIndex = 1
-        Me.label1.Text = "Tu Progreso"
         '
         'pnlHeader
         '
@@ -237,7 +201,7 @@ Partial Class FrmMain
         Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlHeader.Location = New System.Drawing.Point(0, 0)
         Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1008, 27)
+        Me.pnlHeader.Size = New System.Drawing.Size(1340, 27)
         Me.pnlHeader.TabIndex = 5
         '
         'button1
@@ -247,7 +211,7 @@ Partial Class FrmMain
         Me.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.button1.Location = New System.Drawing.Point(980, 0)
+        Me.button1.Location = New System.Drawing.Point(1312, 0)
         Me.button1.Name = "button1"
         Me.button1.Size = New System.Drawing.Size(27, 26)
         Me.button1.TabIndex = 0
@@ -257,9 +221,9 @@ Partial Class FrmMain
         'pnlPrimary
         '
         Me.pnlPrimary.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlPrimary.Location = New System.Drawing.Point(200, 65)
+        Me.pnlPrimary.Location = New System.Drawing.Point(200, 27)
         Me.pnlPrimary.Name = "pnlPrimary"
-        Me.pnlPrimary.Size = New System.Drawing.Size(808, 565)
+        Me.pnlPrimary.Size = New System.Drawing.Size(1140, 727)
         Me.pnlPrimary.TabIndex = 7
         '
         'FrmMain
@@ -267,11 +231,10 @@ Partial Class FrmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1008, 630)
+        Me.ClientSize = New System.Drawing.Size(1340, 754)
         Me.Controls.Add(Me.pnlPrimary)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.pnlProgress)
         Me.Controls.Add(Me.pnlHeader)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "FrmMain"
@@ -280,8 +243,6 @@ Partial Class FrmMain
         Me.panel2.ResumeLayout(False)
         Me.panel2.PerformLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlProgress.ResumeLayout(False)
-        Me.pnlProgress.PerformLayout()
         Me.pnlHeader.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -296,9 +257,6 @@ Partial Class FrmMain
     Private WithEvents pictureBox1 As PictureBox
     Private WithEvents lblNameUser As Label
     Private WithEvents lblTitle As Label
-    Private WithEvents pnlProgress As Panel
-    Private WithEvents progressBar1 As ProgressBar
-    Private WithEvents label1 As Label
     Private WithEvents pnlHeader As Panel
     Private WithEvents button1 As Button
     Private WithEvents pnlPrimary As Panel
