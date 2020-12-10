@@ -9,13 +9,18 @@
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
 
-        If Trim(txtEmailReg.Text) = "" Or Trim(txtEmailReg.Text) = "Correo Institucional" Then
+        If Trim(txtEmailReg.Text) = "" Or Trim(txtEmailReg.Text) = "Correo Institucional" Or Not Trim(txtEmailReg.Text).Contains("@") Then
             MessageBox.Show("Debe ingresar un correo", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
 
         If Trim(txtDocumentReg.Text) = "" Or Trim(txtDocumentReg.Text) = "Documento" Then
             MessageBox.Show("Debe ingresar un documento", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        If Not IsNumeric(Trim(txtDocumentReg.Text)) Then
+            MessageBox.Show("Debe ingresar un documento valido", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
 
@@ -33,7 +38,7 @@
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        If Trim(txtEmail.Text) = "" Or Trim(txtEmail.Text) = "Correo Institucional" Then
+        If Trim(txtEmail.Text) = "" Or Trim(txtEmail.Text) = "Correo Institucional" Or Not Trim(txtEmail.Text).Contains("@") Then
             MessageBox.Show("Debe ingresar un correo", "Validaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return
         End If
