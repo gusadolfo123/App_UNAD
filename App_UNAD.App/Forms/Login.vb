@@ -44,8 +44,7 @@
         End If
 
         If studentManager.CheckUser(txtEmail.Text, txtPassword.Text) Then
-            'MessageBox.Show("Registro Exitoso", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Dim main = FrmMain.GetInstance()
+            Dim main = FrmMain.GetInstance(txtEmail.Text.Split("@")(0))
             main.Show()
             Me.Hide()
         Else

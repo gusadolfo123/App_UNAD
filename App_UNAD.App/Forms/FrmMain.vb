@@ -1,4 +1,5 @@
-﻿Imports FontAwesome.Sharp
+﻿Imports System.Runtime.InteropServices
+Imports FontAwesome.Sharp
 
 Public Class FrmMain
     Private _currentChildForm As Form
@@ -6,14 +7,14 @@ Public Class FrmMain
     Private leftBorderBtn As Panel
     Private Shared _instance As FrmMain
 
-    Public Shared Function GetInstance()
+    Public Shared Function GetInstance(ByVal nameUser As String)
         If _instance Is Nothing Then
-            _instance = New FrmMain()
+            _instance = New FrmMain(nameUser)
         End If
         Return _instance
     End Function
 
-    Public Sub New()
+    Public Sub New(ByVal nameUser As String)
 
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()
@@ -27,6 +28,8 @@ Public Class FrmMain
         Me.ControlBox = False
         Me.DoubleBuffered = True
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+
+        lblNameUser.Text = nameUser
     End Sub
 
     Private Sub OpenFormChild(ByVal childForm As Form)
@@ -104,6 +107,23 @@ Public Class FrmMain
     Private Sub Reset()
         DisableButton()
         leftBorderBtn.Visible = False
+    End Sub
+
+    Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
+        Application.Exit()
+    End Sub
+
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Public Shared Sub ReleaseCapture()
+    End Sub
+
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Public Shared Sub SendMessage(ByVal hWnd As IntPtr, ByVal wMsg As Int32, ByVal wParam As Int32, ByVal lParam As Int32)
+    End Sub
+
+    Private Sub pnlHeader_MouseDown(sender As Object, e As EventArgs) Handles pnlHeader.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112, &HF012, 0)
     End Sub
 
 End Class
