@@ -358,6 +358,7 @@ Partial Class Login
         Me.Controls.Add(Me.pictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.pnlRegister.ResumeLayout(False)
         Me.pnlRegister.PerformLayout()

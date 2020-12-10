@@ -182,9 +182,8 @@ Partial Class FrmMain
         Me.lblNameUser.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNameUser.Location = New System.Drawing.Point(45, 152)
         Me.lblNameUser.Name = "lblNameUser"
-        Me.lblNameUser.Size = New System.Drawing.Size(114, 16)
+        Me.lblNameUser.Size = New System.Drawing.Size(0, 16)
         Me.lblNameUser.TabIndex = 0
-        Me.lblNameUser.Text = "Gustavo Moreno"
         Me.lblNameUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblTitle

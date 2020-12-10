@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtxbox.Text" xml:space="preserve">
+    <value>Operaciones aritméticas
+Con estas operaciones me refiero a las clásicas operaciones de matemáticas entre números como la resta, suma, multiplicación ,etc.
+
+Dichas operaciones en Vasic Basic, la podemos hacer de dos formas , con números enteros o con números reales.
+
+Números Reales son los números tal y como lo vemos, osea 40.302 es 40 y parte decimal 302
+
+Número Enteros son la parte entera del número, en el ejemplo anterior el número sería 40 y se ignora la parte decimal del número.
+
+Los Operadores Aritméticos
++ Suma
+- Resta
+* Multiplicación
+/ División
+\ División de enteros
+Estos son los operadores más simples para efectuar operaciones entre números , tanto si son enteros como si son reales.
+
+La utilización de los paréntesis
+El uso de los paréntesis es más que obligatorio, y debe usted, plantearse desde el principio su utilización general.
+
+Un ejemplo claro de ello sería:
+
+4 + 6 * 30 Esto podría darnos dos resultados distintos:
+
+4 + 6 = 10 y * 30 = 300
+6 * 30 =180 y +4 = 184
+El motivo de ello, es que depende de como se empiezen a usar lo números y sus operaciones matemáticas.
+
+Para ello se utilizan los paréntesis , dependiendo de lo que necesitemos:
+
+si queremo 4 + 6 y lo que salga por 30 sería (4+6)*30 y esto daría 300
+si queremos 4 que se sume a 6*30 sería 4+(6*30) y esto daría 184
+Vistos los ejemplos puede ver claramente el motivo por el cual debe utilizar siempre los paréntesis.
+
+El uso de los operadores con variables
+Como ya conoce que es una variable, si no es así repase los capítulos anteriores, la utilización de dichas variables con los operadores es igual que usando números:
+
+contador = contador +1, esto simplemente sumaría uno al número que tuviese almacenado la varible contador.
+
+Y al igual que con la suma, ocurre con las demás operaciones matemáticas.
+
+Comparar Valores
+Para comparar dos números o variables se utilizan una serie de operadores:
+
+&gt; mayor que
+&lt; menor que
+&gt;= mayor o igual que
+&lt;= menor o igual que
+Con estos podemos comprobar el valor de dos varibles o números, por ejemplo:
+
+if edad&gt;30 then debug.print "Tu tienes mas de 30 años"
+con esto comprobamos que la edad de la persona es superior a 30 años.
+
+Comprobar Valores
+Para comprobar el valor de una variable se utilizan una serie de operadores:
+
+And Y
+Or O
+AND: Con este indicador comprobamos que determinadas varibles tengan el valor que especificamos:
+
+Ejem:
+
+If edad=30 and edadprimo=30 then debug.print "El hijo y el primo tienen la misma edad"
+
+Con esto comprobamos que la edad del hijo y del primo sean las indicadas, si alguna de las dos no fuera la indicada, entonces no se diría "el hijo y el primo tienen la misma edad".
+
+OR: Con este indicador comprobamos que determinadas variables tengan uno de los valores que digamos:
+
+If edad=30 or edadprimo=30 then debug.print "alguno de ellos tiene 30 años"
+Con esto comprobamos que alguna de las edades, o la del hijo o la del primo sean las indicadas, si las dos no fueran las indicadas, entonces no se diría "alguno de ellos tiene 30 años".</value>
+  </data>
+  <data name="AxMedia.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAwAcAAGEC
+        AAAL
+</value>
+  </data>
+</root>

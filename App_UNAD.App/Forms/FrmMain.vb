@@ -87,7 +87,8 @@ Public Class FrmMain
     End Sub
 
     Private Sub btnBasicOp_Click(sender As Object, e As EventArgs) Handles btnBasicOp.Click
-
+        ActivateButton(sender, Color.White)
+        OpenFormChild(New FrmBasicOperations())
     End Sub
 
     Private Sub btnConditional_Click(sender As Object, e As EventArgs) Handles btnConditional.Click
