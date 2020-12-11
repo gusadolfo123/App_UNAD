@@ -45,6 +45,7 @@ Partial Class FrmTestBasicOperations
         Me.panel2 = New System.Windows.Forms.Panel()
         Me.label1 = New System.Windows.Forms.Label()
         Me.lblTimeTest = New System.Windows.Forms.Label()
+        Me.iconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.lblTitleExam = New System.Windows.Forms.Label()
         Me.timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -57,8 +58,24 @@ Partial Class FrmTestBasicOperations
         Me.Q5Op1 = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btnFinish = New System.Windows.Forms.Button()
+        Me.Q10Op4 = New System.Windows.Forms.RadioButton()
+        Me.Q10Op2 = New System.Windows.Forms.RadioButton()
+        Me.Q10Op3 = New System.Windows.Forms.RadioButton()
+        Me.Q10Op1 = New System.Windows.Forms.RadioButton()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Q9Op4 = New System.Windows.Forms.RadioButton()
+        Me.Q9Op2 = New System.Windows.Forms.RadioButton()
+        Me.Q9Op3 = New System.Windows.Forms.RadioButton()
+        Me.Q9Op1 = New System.Windows.Forms.RadioButton()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Q8Op4 = New System.Windows.Forms.RadioButton()
+        Me.Q8Op2 = New System.Windows.Forms.RadioButton()
+        Me.Q8Op3 = New System.Windows.Forms.RadioButton()
+        Me.Q8Op1 = New System.Windows.Forms.RadioButton()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Q7Op4 = New System.Windows.Forms.CheckBox()
         Me.Q7Op2 = New System.Windows.Forms.CheckBox()
@@ -71,28 +88,12 @@ Partial Class FrmTestBasicOperations
         Me.Q6Op2 = New System.Windows.Forms.RadioButton()
         Me.Q6Op1 = New System.Windows.Forms.RadioButton()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Q8Op4 = New System.Windows.Forms.RadioButton()
-        Me.Q8Op2 = New System.Windows.Forms.RadioButton()
-        Me.Q8Op3 = New System.Windows.Forms.RadioButton()
-        Me.Q8Op1 = New System.Windows.Forms.RadioButton()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Q9Op4 = New System.Windows.Forms.RadioButton()
-        Me.Q9Op2 = New System.Windows.Forms.RadioButton()
-        Me.Q9Op3 = New System.Windows.Forms.RadioButton()
-        Me.Q9Op1 = New System.Windows.Forms.RadioButton()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Q10Op4 = New System.Windows.Forms.RadioButton()
-        Me.Q10Op2 = New System.Windows.Forms.RadioButton()
-        Me.Q10Op3 = New System.Windows.Forms.RadioButton()
-        Me.Q10Op1 = New System.Windows.Forms.RadioButton()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.btnFinish = New System.Windows.Forms.Button()
-        Me.iconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.panel5.SuspendLayout()
         Me.panel4.SuspendLayout()
         Me.panel3.SuspendLayout()
         Me.panel1.SuspendLayout()
         Me.panel2.SuspendLayout()
+        CType(Me.iconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -100,7 +101,6 @@ Partial Class FrmTestBasicOperations
         Me.Panel10.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.Panel12.SuspendLayout()
-        CType(Me.iconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panel5
@@ -358,6 +358,18 @@ Partial Class FrmTestBasicOperations
         Me.lblTimeTest.TabIndex = 3
         Me.lblTimeTest.Text = "2:00"
         '
+        'iconPictureBox1
+        '
+        Me.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.FileSignature
+        Me.iconPictureBox1.IconColor = System.Drawing.Color.White
+        Me.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.iconPictureBox1.Location = New System.Drawing.Point(32, 36)
+        Me.iconPictureBox1.Name = "iconPictureBox1"
+        Me.iconPictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.iconPictureBox1.TabIndex = 1
+        Me.iconPictureBox1.TabStop = False
+        '
         'lblTitleExam
         '
         Me.lblTitleExam.AutoSize = True
@@ -490,6 +502,74 @@ Partial Class FrmTestBasicOperations
         Me.Panel8.Size = New System.Drawing.Size(1062, 104)
         Me.Panel8.TabIndex = 16
         '
+        'btnFinish
+        '
+        Me.btnFinish.Location = New System.Drawing.Point(814, 21)
+        Me.btnFinish.Name = "btnFinish"
+        Me.btnFinish.Size = New System.Drawing.Size(113, 57)
+        Me.btnFinish.TabIndex = 20
+        Me.btnFinish.Text = "Terminar Prueba"
+        Me.btnFinish.UseVisualStyleBackColor = True
+        '
+        'Q10Op4
+        '
+        Me.Q10Op4.AutoSize = True
+        Me.Q10Op4.ForeColor = System.Drawing.Color.White
+        Me.Q10Op4.Location = New System.Drawing.Point(258, 58)
+        Me.Q10Op4.Name = "Q10Op4"
+        Me.Q10Op4.Size = New System.Drawing.Size(46, 17)
+        Me.Q10Op4.TabIndex = 19
+        Me.Q10Op4.TabStop = True
+        Me.Q10Op4.Text = "Mod"
+        Me.Q10Op4.UseVisualStyleBackColor = True
+        '
+        'Q10Op2
+        '
+        Me.Q10Op2.AutoSize = True
+        Me.Q10Op2.ForeColor = System.Drawing.Color.White
+        Me.Q10Op2.Location = New System.Drawing.Point(130, 58)
+        Me.Q10Op2.Name = "Q10Op2"
+        Me.Q10Op2.Size = New System.Drawing.Size(44, 17)
+        Me.Q10Op2.TabIndex = 18
+        Me.Q10Op2.TabStop = True
+        Me.Q10Op2.Text = "And"
+        Me.Q10Op2.UseVisualStyleBackColor = True
+        '
+        'Q10Op3
+        '
+        Me.Q10Op3.AutoSize = True
+        Me.Q10Op3.ForeColor = System.Drawing.Color.White
+        Me.Q10Op3.Location = New System.Drawing.Point(200, 58)
+        Me.Q10Op3.Name = "Q10Op3"
+        Me.Q10Op3.Size = New System.Drawing.Size(41, 17)
+        Me.Q10Op3.TabIndex = 17
+        Me.Q10Op3.TabStop = True
+        Me.Q10Op3.Text = "Xor"
+        Me.Q10Op3.UseVisualStyleBackColor = True
+        '
+        'Q10Op1
+        '
+        Me.Q10Op1.AutoSize = True
+        Me.Q10Op1.ForeColor = System.Drawing.Color.White
+        Me.Q10Op1.Location = New System.Drawing.Point(50, 58)
+        Me.Q10Op1.Name = "Q10Op1"
+        Me.Q10Op1.Size = New System.Drawing.Size(42, 17)
+        Me.Q10Op1.TabIndex = 16
+        Me.Q10Op1.TabStop = True
+        Me.Q10Op1.Text = "Not"
+        Me.Q10Op1.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(28, 21)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(404, 19)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "10. Cual de los siguientes es un operador Aritmetico"
+        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.White
@@ -504,6 +584,61 @@ Partial Class FrmTestBasicOperations
         Me.Panel9.Size = New System.Drawing.Size(1062, 112)
         Me.Panel9.TabIndex = 15
         '
+        'Q9Op4
+        '
+        Me.Q9Op4.AutoSize = True
+        Me.Q9Op4.Location = New System.Drawing.Point(258, 70)
+        Me.Q9Op4.Name = "Q9Op4"
+        Me.Q9Op4.Size = New System.Drawing.Size(31, 17)
+        Me.Q9Op4.TabIndex = 19
+        Me.Q9Op4.TabStop = True
+        Me.Q9Op4.Text = "&&"
+        Me.Q9Op4.UseVisualStyleBackColor = True
+        '
+        'Q9Op2
+        '
+        Me.Q9Op2.AutoSize = True
+        Me.Q9Op2.Location = New System.Drawing.Point(130, 70)
+        Me.Q9Op2.Name = "Q9Op2"
+        Me.Q9Op2.Size = New System.Drawing.Size(44, 17)
+        Me.Q9Op2.TabIndex = 18
+        Me.Q9Op2.TabStop = True
+        Me.Q9Op2.Text = "And"
+        Me.Q9Op2.UseVisualStyleBackColor = True
+        '
+        'Q9Op3
+        '
+        Me.Q9Op3.AutoSize = True
+        Me.Q9Op3.Location = New System.Drawing.Point(200, 70)
+        Me.Q9Op3.Name = "Q9Op3"
+        Me.Q9Op3.Size = New System.Drawing.Size(45, 17)
+        Me.Q9Op3.TabIndex = 17
+        Me.Q9Op3.TabStop = True
+        Me.Q9Op3.Text = "Like"
+        Me.Q9Op3.UseVisualStyleBackColor = True
+        '
+        'Q9Op1
+        '
+        Me.Q9Op1.AutoSize = True
+        Me.Q9Op1.Location = New System.Drawing.Point(50, 70)
+        Me.Q9Op1.Name = "Q9Op1"
+        Me.Q9Op1.Size = New System.Drawing.Size(42, 17)
+        Me.Q9Op1.TabIndex = 16
+        Me.Q9Op1.TabStop = True
+        Me.Q9Op1.Text = "Not"
+        Me.Q9Op1.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(28, 33)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(449, 19)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "9. Cual de los siguientes es un operador de comparacion"
+        '
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
@@ -517,6 +652,65 @@ Partial Class FrmTestBasicOperations
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(1062, 101)
         Me.Panel10.TabIndex = 14
+        '
+        'Q8Op4
+        '
+        Me.Q8Op4.AutoSize = True
+        Me.Q8Op4.ForeColor = System.Drawing.Color.White
+        Me.Q8Op4.Location = New System.Drawing.Point(258, 63)
+        Me.Q8Op4.Name = "Q8Op4"
+        Me.Q8Op4.Size = New System.Drawing.Size(37, 17)
+        Me.Q8Op4.TabIndex = 14
+        Me.Q8Op4.TabStop = True
+        Me.Q8Op4.Text = "<>"
+        Me.Q8Op4.UseVisualStyleBackColor = True
+        '
+        'Q8Op2
+        '
+        Me.Q8Op2.AutoSize = True
+        Me.Q8Op2.ForeColor = System.Drawing.Color.White
+        Me.Q8Op2.Location = New System.Drawing.Point(130, 63)
+        Me.Q8Op2.Name = "Q8Op2"
+        Me.Q8Op2.Size = New System.Drawing.Size(31, 17)
+        Me.Q8Op2.TabIndex = 13
+        Me.Q8Op2.TabStop = True
+        Me.Q8Op2.Text = "<"
+        Me.Q8Op2.UseVisualStyleBackColor = True
+        '
+        'Q8Op3
+        '
+        Me.Q8Op3.AutoSize = True
+        Me.Q8Op3.ForeColor = System.Drawing.Color.White
+        Me.Q8Op3.Location = New System.Drawing.Point(200, 63)
+        Me.Q8Op3.Name = "Q8Op3"
+        Me.Q8Op3.Size = New System.Drawing.Size(31, 17)
+        Me.Q8Op3.TabIndex = 12
+        Me.Q8Op3.TabStop = True
+        Me.Q8Op3.Text = ">"
+        Me.Q8Op3.UseVisualStyleBackColor = True
+        '
+        'Q8Op1
+        '
+        Me.Q8Op1.AutoSize = True
+        Me.Q8Op1.ForeColor = System.Drawing.Color.White
+        Me.Q8Op1.Location = New System.Drawing.Point(50, 63)
+        Me.Q8Op1.Name = "Q8Op1"
+        Me.Q8Op1.Size = New System.Drawing.Size(34, 17)
+        Me.Q8Op1.TabIndex = 11
+        Me.Q8Op1.TabStop = True
+        Me.Q8Op1.Text = "!="
+        Me.Q8Op1.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(28, 26)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(448, 19)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "8. Cual de los siguientes es el operador ""distinto de"" en VB"
         '
         'Panel11
         '
@@ -653,200 +847,6 @@ Partial Class FrmTestBasicOperations
         Me.Label11.TabIndex = 5
         Me.Label11.Text = "6. El resultado de la siguiente operacion"
         '
-        'Q8Op4
-        '
-        Me.Q8Op4.AutoSize = True
-        Me.Q8Op4.ForeColor = System.Drawing.Color.White
-        Me.Q8Op4.Location = New System.Drawing.Point(258, 63)
-        Me.Q8Op4.Name = "Q8Op4"
-        Me.Q8Op4.Size = New System.Drawing.Size(37, 17)
-        Me.Q8Op4.TabIndex = 14
-        Me.Q8Op4.TabStop = True
-        Me.Q8Op4.Text = "<>"
-        Me.Q8Op4.UseVisualStyleBackColor = True
-        '
-        'Q8Op2
-        '
-        Me.Q8Op2.AutoSize = True
-        Me.Q8Op2.ForeColor = System.Drawing.Color.White
-        Me.Q8Op2.Location = New System.Drawing.Point(130, 63)
-        Me.Q8Op2.Name = "Q8Op2"
-        Me.Q8Op2.Size = New System.Drawing.Size(31, 17)
-        Me.Q8Op2.TabIndex = 13
-        Me.Q8Op2.TabStop = True
-        Me.Q8Op2.Text = "<"
-        Me.Q8Op2.UseVisualStyleBackColor = True
-        '
-        'Q8Op3
-        '
-        Me.Q8Op3.AutoSize = True
-        Me.Q8Op3.ForeColor = System.Drawing.Color.White
-        Me.Q8Op3.Location = New System.Drawing.Point(200, 63)
-        Me.Q8Op3.Name = "Q8Op3"
-        Me.Q8Op3.Size = New System.Drawing.Size(31, 17)
-        Me.Q8Op3.TabIndex = 12
-        Me.Q8Op3.TabStop = True
-        Me.Q8Op3.Text = ">"
-        Me.Q8Op3.UseVisualStyleBackColor = True
-        '
-        'Q8Op1
-        '
-        Me.Q8Op1.AutoSize = True
-        Me.Q8Op1.ForeColor = System.Drawing.Color.White
-        Me.Q8Op1.Location = New System.Drawing.Point(50, 63)
-        Me.Q8Op1.Name = "Q8Op1"
-        Me.Q8Op1.Size = New System.Drawing.Size(34, 17)
-        Me.Q8Op1.TabIndex = 11
-        Me.Q8Op1.TabStop = True
-        Me.Q8Op1.Text = "!="
-        Me.Q8Op1.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(28, 26)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(448, 19)
-        Me.Label9.TabIndex = 10
-        Me.Label9.Text = "8. Cual de los siguientes es el operador ""distinto de"" en VB"
-        '
-        'Q9Op4
-        '
-        Me.Q9Op4.AutoSize = True
-        Me.Q9Op4.Location = New System.Drawing.Point(258, 70)
-        Me.Q9Op4.Name = "Q9Op4"
-        Me.Q9Op4.Size = New System.Drawing.Size(31, 17)
-        Me.Q9Op4.TabIndex = 19
-        Me.Q9Op4.TabStop = True
-        Me.Q9Op4.Text = "&&"
-        Me.Q9Op4.UseVisualStyleBackColor = True
-        '
-        'Q9Op2
-        '
-        Me.Q9Op2.AutoSize = True
-        Me.Q9Op2.Location = New System.Drawing.Point(130, 70)
-        Me.Q9Op2.Name = "Q9Op2"
-        Me.Q9Op2.Size = New System.Drawing.Size(44, 17)
-        Me.Q9Op2.TabIndex = 18
-        Me.Q9Op2.TabStop = True
-        Me.Q9Op2.Text = "And"
-        Me.Q9Op2.UseVisualStyleBackColor = True
-        '
-        'Q9Op3
-        '
-        Me.Q9Op3.AutoSize = True
-        Me.Q9Op3.Location = New System.Drawing.Point(200, 70)
-        Me.Q9Op3.Name = "Q9Op3"
-        Me.Q9Op3.Size = New System.Drawing.Size(45, 17)
-        Me.Q9Op3.TabIndex = 17
-        Me.Q9Op3.TabStop = True
-        Me.Q9Op3.Text = "Like"
-        Me.Q9Op3.UseVisualStyleBackColor = True
-        '
-        'Q9Op1
-        '
-        Me.Q9Op1.AutoSize = True
-        Me.Q9Op1.Location = New System.Drawing.Point(50, 70)
-        Me.Q9Op1.Name = "Q9Op1"
-        Me.Q9Op1.Size = New System.Drawing.Size(42, 17)
-        Me.Q9Op1.TabIndex = 16
-        Me.Q9Op1.TabStop = True
-        Me.Q9Op1.Text = "Not"
-        Me.Q9Op1.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(28, 33)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(449, 19)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "9. Cual de los siguientes es un operador de comparacion"
-        '
-        'Q10Op4
-        '
-        Me.Q10Op4.AutoSize = True
-        Me.Q10Op4.ForeColor = System.Drawing.Color.White
-        Me.Q10Op4.Location = New System.Drawing.Point(258, 58)
-        Me.Q10Op4.Name = "Q10Op4"
-        Me.Q10Op4.Size = New System.Drawing.Size(46, 17)
-        Me.Q10Op4.TabIndex = 19
-        Me.Q10Op4.TabStop = True
-        Me.Q10Op4.Text = "Mod"
-        Me.Q10Op4.UseVisualStyleBackColor = True
-        '
-        'Q10Op2
-        '
-        Me.Q10Op2.AutoSize = True
-        Me.Q10Op2.ForeColor = System.Drawing.Color.White
-        Me.Q10Op2.Location = New System.Drawing.Point(130, 58)
-        Me.Q10Op2.Name = "Q10Op2"
-        Me.Q10Op2.Size = New System.Drawing.Size(44, 17)
-        Me.Q10Op2.TabIndex = 18
-        Me.Q10Op2.TabStop = True
-        Me.Q10Op2.Text = "And"
-        Me.Q10Op2.UseVisualStyleBackColor = True
-        '
-        'Q10Op3
-        '
-        Me.Q10Op3.AutoSize = True
-        Me.Q10Op3.ForeColor = System.Drawing.Color.White
-        Me.Q10Op3.Location = New System.Drawing.Point(200, 58)
-        Me.Q10Op3.Name = "Q10Op3"
-        Me.Q10Op3.Size = New System.Drawing.Size(41, 17)
-        Me.Q10Op3.TabIndex = 17
-        Me.Q10Op3.TabStop = True
-        Me.Q10Op3.Text = "Xor"
-        Me.Q10Op3.UseVisualStyleBackColor = True
-        '
-        'Q10Op1
-        '
-        Me.Q10Op1.AutoSize = True
-        Me.Q10Op1.ForeColor = System.Drawing.Color.White
-        Me.Q10Op1.Location = New System.Drawing.Point(50, 58)
-        Me.Q10Op1.Name = "Q10Op1"
-        Me.Q10Op1.Size = New System.Drawing.Size(42, 17)
-        Me.Q10Op1.TabIndex = 16
-        Me.Q10Op1.TabStop = True
-        Me.Q10Op1.Text = "Not"
-        Me.Q10Op1.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(28, 21)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(404, 19)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "10. Cual de los siguientes es un operador Aritmetico"
-        '
-        'btnFinish
-        '
-        Me.btnFinish.Location = New System.Drawing.Point(814, 21)
-        Me.btnFinish.Name = "btnFinish"
-        Me.btnFinish.Size = New System.Drawing.Size(113, 57)
-        Me.btnFinish.TabIndex = 20
-        Me.btnFinish.Text = "Terminar Prueba"
-        Me.btnFinish.UseVisualStyleBackColor = True
-        '
-        'iconPictureBox1
-        '
-        Me.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.FileSignature
-        Me.iconPictureBox1.IconColor = System.Drawing.Color.White
-        Me.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconPictureBox1.Location = New System.Drawing.Point(32, 36)
-        Me.iconPictureBox1.Name = "iconPictureBox1"
-        Me.iconPictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.iconPictureBox1.TabIndex = 1
-        Me.iconPictureBox1.TabStop = False
-        '
         'FrmTestBasicOperations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -876,6 +876,7 @@ Partial Class FrmTestBasicOperations
         Me.panel1.PerformLayout()
         Me.panel2.ResumeLayout(False)
         Me.panel2.PerformLayout()
+        CType(Me.iconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
@@ -890,7 +891,6 @@ Partial Class FrmTestBasicOperations
         Me.Panel11.PerformLayout()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
-        CType(Me.iconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

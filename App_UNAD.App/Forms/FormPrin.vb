@@ -105,17 +105,26 @@ Public Class FormPrin
     End Sub
 
     Private Sub FormPrin_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        FormQuizCond.Show()
         Me.Hide()
     End Sub
 
-    'Private Sub Ejemplo1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Ejemplo1ToolStripMenuItem.Click
-    '    FormEjmQuiz.Show()
-    '    Me.Hide()
-    'End Sub
+    Private Sub BtnQuiz_Click(sender As Object, e As EventArgs) Handles BtnQuiz.Click
+        Dim childForm = New FormQuizCond()
+        Dim _currentChildForm = Me
+        Dim myPanel As Panel = Me.Parent
 
-    'Private Sub Ejemplo2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Ejemplo2ToolStripMenuItem.Click
-    '    FormEjmValidarClave.Show()
-    '    Me.Hide()
-    'End Sub
+        If _currentChildForm IsNot Nothing Then
+            _currentChildForm.Close()
+        End If
+
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        myPanel.Controls.Add(childForm)
+        myPanel.Tag = childForm
+        childForm.BringToFront()
+        childForm.Width = myPanel.Width
+        childForm.Show()
+    End Sub
+
 End Class

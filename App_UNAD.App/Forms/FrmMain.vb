@@ -30,6 +30,7 @@ Public Class FrmMain
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
 
         lblNameUser.Text = nameUser
+
     End Sub
 
     Private Sub OpenFormChild(ByVal childForm As Form)

@@ -50,6 +50,7 @@ Partial Class FormPrin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnQuiz = New System.Windows.Forms.Button()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -339,11 +340,21 @@ Partial Class FormPrin
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'BtnQuiz
+        '
+        Me.BtnQuiz.Location = New System.Drawing.Point(831, 78)
+        Me.BtnQuiz.Name = "BtnQuiz"
+        Me.BtnQuiz.Size = New System.Drawing.Size(184, 65)
+        Me.BtnQuiz.TabIndex = 22
+        Me.BtnQuiz.Text = "Presentar Examen"
+        Me.BtnQuiz.UseVisualStyleBackColor = True
+        '
         'FormPrin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1109, 742)
+        Me.Controls.Add(Me.BtnQuiz)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
@@ -394,4 +405,5 @@ Partial Class FormPrin
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents BtnQuiz As Button
 End Class

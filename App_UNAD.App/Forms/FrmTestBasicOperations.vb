@@ -24,7 +24,26 @@
             timer1.Stop()
             MessageBox.Show("Finalizo el tiempo")
             If EvaluateTest() Then
-                MessageBox.Show("Aprobaste el Test Puedes ver el siguiente Tema")
+                MessageBox.Show("Aprobaste el test puedes ver el siguiente tema")
+            Else
+                MessageBox.Show("Reprobaste el test vuelve a ver el tema")
+
+                Dim childForm = New FrmBasicOperations()
+                Dim _currentChildForm = Me
+                Dim myPanel As Panel = Me.Parent
+
+                If _currentChildForm IsNot Nothing Then
+                    _currentChildForm.Close()
+                End If
+
+                childForm.TopLevel = False
+                childForm.FormBorderStyle = FormBorderStyle.None
+                childForm.Dock = DockStyle.Fill
+                myPanel.Controls.Add(childForm)
+                myPanel.Tag = childForm
+                childForm.BringToFront()
+                childForm.Width = myPanel.Width
+                childForm.Show()
 
             End If
         End If
@@ -71,6 +90,28 @@
     End Function
 
     Private Sub btnFinish_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
+        If EvaluateTest() Then
+            MessageBox.Show("Aprobaste el test puedes ver el siguiente tema")
+        Else
+            MessageBox.Show("Reprobaste el test vuelve a ver el tema")
 
+            Dim childForm = New FrmBasicOperations()
+            Dim _currentChildForm = Me
+            Dim myPanel As Panel = Me.Parent
+
+            If _currentChildForm IsNot Nothing Then
+                _currentChildForm.Close()
+            End If
+
+            childForm.TopLevel = False
+            childForm.FormBorderStyle = FormBorderStyle.None
+            childForm.Dock = DockStyle.Fill
+            myPanel.Controls.Add(childForm)
+            myPanel.Tag = childForm
+            childForm.BringToFront()
+            childForm.Width = myPanel.Width
+            childForm.Show()
+
+        End If
     End Sub
 End Class

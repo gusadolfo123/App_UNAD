@@ -22,47 +22,23 @@ Partial Class FrmMain
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnConditional = New FontAwesome.Sharp.IconButton()
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.btnExit = New FontAwesome.Sharp.IconButton()
-        Me.btnIterable = New FontAwesome.Sharp.IconButton()
-        Me.btnBasicOp = New FontAwesome.Sharp.IconButton()
         Me.panel2 = New System.Windows.Forms.Panel()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblNameUser = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pnlHeader = New System.Windows.Forms.Panel()
         Me.button1 = New System.Windows.Forms.Button()
         Me.pnlPrimary = New System.Windows.Forms.Panel()
+        Me.btnExit = New FontAwesome.Sharp.IconButton()
+        Me.btnIterable = New FontAwesome.Sharp.IconButton()
+        Me.btnConditional = New FontAwesome.Sharp.IconButton()
+        Me.btnBasicOp = New FontAwesome.Sharp.IconButton()
+        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.panel2.SuspendLayout()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlHeader.SuspendLayout()
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnConditional
-        '
-        Me.btnConditional.BackColor = System.Drawing.Color.Transparent
-        Me.btnConditional.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnConditional.FlatAppearance.BorderSize = 0
-        Me.btnConditional.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnConditional.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnConditional.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConditional.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConditional.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle
-        Me.btnConditional.IconColor = System.Drawing.Color.White
-        Me.btnConditional.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnConditional.IconSize = 34
-        Me.btnConditional.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnConditional.Location = New System.Drawing.Point(0, 242)
-        Me.btnConditional.Name = "btnConditional"
-        Me.btnConditional.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.btnConditional.Size = New System.Drawing.Size(200, 60)
-        Me.btnConditional.TabIndex = 2
-        Me.btnConditional.Text = " Condicionales"
-        Me.btnConditional.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnConditional.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnConditional.UseVisualStyleBackColor = False
         '
         'pnlMenu
         '
@@ -79,78 +55,6 @@ Partial Class FrmMain
         Me.pnlMenu.Size = New System.Drawing.Size(200, 727)
         Me.pnlMenu.TabIndex = 3
         '
-        'btnExit
-        '
-        Me.btnExit.BackColor = System.Drawing.Color.Transparent
-        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnExit.FlatAppearance.BorderSize = 0
-        Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
-        Me.btnExit.IconColor = System.Drawing.Color.White
-        Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnExit.IconSize = 34
-        Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 667)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.btnExit.Size = New System.Drawing.Size(200, 60)
-        Me.btnExit.TabIndex = 4
-        Me.btnExit.Text = " Salir"
-        Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnExit.UseVisualStyleBackColor = False
-        '
-        'btnIterable
-        '
-        Me.btnIterable.BackColor = System.Drawing.Color.Transparent
-        Me.btnIterable.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnIterable.FlatAppearance.BorderSize = 0
-        Me.btnIterable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnIterable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnIterable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIterable.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIterable.IconChar = FontAwesome.Sharp.IconChar.Redo
-        Me.btnIterable.IconColor = System.Drawing.Color.White
-        Me.btnIterable.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnIterable.IconSize = 34
-        Me.btnIterable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIterable.Location = New System.Drawing.Point(0, 302)
-        Me.btnIterable.Name = "btnIterable"
-        Me.btnIterable.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.btnIterable.Size = New System.Drawing.Size(200, 60)
-        Me.btnIterable.TabIndex = 3
-        Me.btnIterable.Text = " Ciclos"
-        Me.btnIterable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIterable.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnIterable.UseVisualStyleBackColor = False
-        '
-        'btnBasicOp
-        '
-        Me.btnBasicOp.BackColor = System.Drawing.Color.Transparent
-        Me.btnBasicOp.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnBasicOp.FlatAppearance.BorderSize = 0
-        Me.btnBasicOp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnBasicOp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnBasicOp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBasicOp.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBasicOp.IconChar = FontAwesome.Sharp.IconChar.Calculator
-        Me.btnBasicOp.IconColor = System.Drawing.Color.White
-        Me.btnBasicOp.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnBasicOp.IconSize = 34
-        Me.btnBasicOp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBasicOp.Location = New System.Drawing.Point(0, 182)
-        Me.btnBasicOp.Name = "btnBasicOp"
-        Me.btnBasicOp.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.btnBasicOp.Size = New System.Drawing.Size(200, 60)
-        Me.btnBasicOp.TabIndex = 1
-        Me.btnBasicOp.Text = " Operaciones básicas"
-        Me.btnBasicOp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBasicOp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnBasicOp.UseVisualStyleBackColor = False
-        '
         'panel2
         '
         Me.panel2.Controls.Add(Me.pictureBox1)
@@ -160,17 +64,6 @@ Partial Class FrmMain
         Me.panel2.Name = "panel2"
         Me.panel2.Size = New System.Drawing.Size(200, 182)
         Me.panel2.TabIndex = 0
-        '
-        'pictureBox1
-        '
-        Me.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pictureBox1.Image = Global.App_UNAD.App.My.Resources.Resources.usuario
-        Me.pictureBox1.Location = New System.Drawing.Point(26, 12)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(145, 137)
-        Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pictureBox1.TabIndex = 1
-        Me.pictureBox1.TabStop = False
         '
         'lblNameUser
         '
@@ -226,6 +119,113 @@ Partial Class FrmMain
         Me.pnlPrimary.Size = New System.Drawing.Size(1140, 727)
         Me.pnlPrimary.TabIndex = 7
         '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.Transparent
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnExit.FlatAppearance.BorderSize = 0
+        Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt
+        Me.btnExit.IconColor = System.Drawing.Color.White
+        Me.btnExit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnExit.IconSize = 34
+        Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnExit.Location = New System.Drawing.Point(0, 667)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.btnExit.Size = New System.Drawing.Size(200, 60)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = " Salir"
+        Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
+        'btnIterable
+        '
+        Me.btnIterable.BackColor = System.Drawing.Color.Transparent
+        Me.btnIterable.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnIterable.FlatAppearance.BorderSize = 0
+        Me.btnIterable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnIterable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnIterable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIterable.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIterable.IconChar = FontAwesome.Sharp.IconChar.Redo
+        Me.btnIterable.IconColor = System.Drawing.Color.White
+        Me.btnIterable.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnIterable.IconSize = 34
+        Me.btnIterable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIterable.Location = New System.Drawing.Point(0, 302)
+        Me.btnIterable.Name = "btnIterable"
+        Me.btnIterable.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.btnIterable.Size = New System.Drawing.Size(200, 60)
+        Me.btnIterable.TabIndex = 3
+        Me.btnIterable.Text = " Ciclos"
+        Me.btnIterable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIterable.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnIterable.UseVisualStyleBackColor = False
+        '
+        'btnConditional
+        '
+        Me.btnConditional.BackColor = System.Drawing.Color.Transparent
+        Me.btnConditional.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnConditional.FlatAppearance.BorderSize = 0
+        Me.btnConditional.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnConditional.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnConditional.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConditional.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConditional.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle
+        Me.btnConditional.IconColor = System.Drawing.Color.White
+        Me.btnConditional.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnConditional.IconSize = 34
+        Me.btnConditional.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConditional.Location = New System.Drawing.Point(0, 242)
+        Me.btnConditional.Name = "btnConditional"
+        Me.btnConditional.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.btnConditional.Size = New System.Drawing.Size(200, 60)
+        Me.btnConditional.TabIndex = 2
+        Me.btnConditional.Text = " Condicionales"
+        Me.btnConditional.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConditional.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnConditional.UseVisualStyleBackColor = False
+        '
+        'btnBasicOp
+        '
+        Me.btnBasicOp.BackColor = System.Drawing.Color.Transparent
+        Me.btnBasicOp.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBasicOp.FlatAppearance.BorderSize = 0
+        Me.btnBasicOp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnBasicOp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnBasicOp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBasicOp.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBasicOp.IconChar = FontAwesome.Sharp.IconChar.Calculator
+        Me.btnBasicOp.IconColor = System.Drawing.Color.White
+        Me.btnBasicOp.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnBasicOp.IconSize = 34
+        Me.btnBasicOp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBasicOp.Location = New System.Drawing.Point(0, 182)
+        Me.btnBasicOp.Name = "btnBasicOp"
+        Me.btnBasicOp.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.btnBasicOp.Size = New System.Drawing.Size(200, 60)
+        Me.btnBasicOp.TabIndex = 1
+        Me.btnBasicOp.Text = " Operaciones básicas"
+        Me.btnBasicOp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBasicOp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBasicOp.UseVisualStyleBackColor = False
+        '
+        'pictureBox1
+        '
+        Me.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pictureBox1.Image = Global.App_UNAD.App.My.Resources.Resources.usuario
+        Me.pictureBox1.Location = New System.Drawing.Point(26, 12)
+        Me.pictureBox1.Name = "pictureBox1"
+        Me.pictureBox1.Size = New System.Drawing.Size(145, 137)
+        Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pictureBox1.TabIndex = 1
+        Me.pictureBox1.TabStop = False
+        '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -242,8 +242,8 @@ Partial Class FrmMain
         Me.pnlMenu.ResumeLayout(False)
         Me.panel2.ResumeLayout(False)
         Me.panel2.PerformLayout()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlHeader.ResumeLayout(False)
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

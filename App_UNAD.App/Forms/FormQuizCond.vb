@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Quiz_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Me.Hide()
+        'Me.Hide()
         ' MenuPrincipal.Show()
     End Sub
 
@@ -48,12 +48,12 @@
                 If Label7.Text = 0 Then
                     Label10.Text = 0
                     Timer1.Stop()
-                    Me.Hide()
+                    'Me.Hide()
                     MessageBox.Show("Fallo el examen por tiempo debe volver a empezar", "Se termino el tiempo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     Me.Controls.Clear()
                     Me.InitializeComponent()
                     Button2.TabIndex = 0
-                    Me.Show()
+                    'Me.Show()
                 Else
                     Label7.Text -= 1
                     Label10.Text = 9
@@ -74,7 +74,7 @@
 
         Timer1.Stop()
         BanSalir = 0
-        Me.Hide()
+        'Me.Hide()
         If (RadioButton1.Checked = True Or RadioButton2.Checked = True Or RadioButton3.Checked = True Or RadioButton4.Checked = True) Then
             If RadioButton3.Checked = True Then
                 Puntaje += 1
@@ -183,18 +183,36 @@
             MessageBox.Show("No ha contestado la pregunta 10", "Falta responder la pregunta 10", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Timer1.Start()
         End If
-        Me.Show()
+        ' Me.Show()
 
 
         If BanSalir = 10 Then
-            Me.Hide()
+            'Me.Hide()
 
             If Puntaje < 6 Then
                 MessageBox.Show("Desaforunadamente no logro el puntaje requerido para aprobar, puntaje final " & Puntaje & " de 10", "Fallo el quiz", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                Dim childForm = New FormPrin()
+                Dim _currentChildForm = Me
+                Dim myPanel As Panel = Me.Parent
+
+                If _currentChildForm IsNot Nothing Then
+                    _currentChildForm.Close()
+                End If
+
+                childForm.TopLevel = False
+                childForm.FormBorderStyle = FormBorderStyle.None
+                childForm.Dock = DockStyle.Fill
+                myPanel.Controls.Add(childForm)
+                myPanel.Tag = childForm
+                childForm.BringToFront()
+                childForm.Width = myPanel.Width
+                childForm.Show()
+
             Else
                 MessageBox.Show("Felicitaciones logro el puntaje requerido para pasar, puntaje final " & Puntaje & " de 10", "Aprobo el quiz", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
-            Me.Close()
+            'Me.Close()
             'MenuPrincipal.Show()
         End If
 

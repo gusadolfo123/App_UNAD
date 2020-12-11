@@ -52,6 +52,7 @@ Partial Class FrmBasicOperations
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.AxMedia = New AxWMPLib.AxWindowsMediaPlayer()
         Me.lblVideo = New System.Windows.Forms.Label()
         Me.btnContinuousVideo = New System.Windows.Forms.Button()
         Me.btnPauseVideo = New System.Windows.Forms.Button()
@@ -59,10 +60,9 @@ Partial Class FrmBasicOperations
         Me.btnStopVideo = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblImagenes = New System.Windows.Forms.Label()
+        Me.picLogic = New System.Windows.Forms.PictureBox()
         Me.rtxbox = New System.Windows.Forms.RichTextBox()
         Me.pnlFirst = New System.Windows.Forms.Panel()
-        Me.picLogic = New System.Windows.Forms.PictureBox()
-        Me.AxMedia = New AxWMPLib.AxWindowsMediaPlayer()
         Me.pnlExamples.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.pnlExercise3.SuspendLayout()
@@ -71,10 +71,10 @@ Partial Class FrmBasicOperations
         CType(Me.txtHeight, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtWeight, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.pnlFirst.SuspendLayout()
-        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlFirst.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -400,6 +400,15 @@ Partial Class FrmBasicOperations
         Me.Panel4.Size = New System.Drawing.Size(516, 394)
         Me.Panel4.TabIndex = 9
         '
+        'AxMedia
+        '
+        Me.AxMedia.Enabled = True
+        Me.AxMedia.Location = New System.Drawing.Point(8, 103)
+        Me.AxMedia.Name = "AxMedia"
+        Me.AxMedia.OcxState = CType(resources.GetObject("AxMedia.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxMedia.Size = New System.Drawing.Size(502, 323)
+        Me.AxMedia.TabIndex = 6
+        '
         'lblVideo
         '
         Me.lblVideo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
@@ -479,6 +488,16 @@ Partial Class FrmBasicOperations
         Me.lblImagenes.Text = "Imagenes y Texto"
         Me.lblImagenes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'picLogic
+        '
+        Me.picLogic.Image = Global.App_UNAD.App.My.Resources.Resources.operadores
+        Me.picLogic.Location = New System.Drawing.Point(15, 47)
+        Me.picLogic.Name = "picLogic"
+        Me.picLogic.Size = New System.Drawing.Size(514, 298)
+        Me.picLogic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLogic.TabIndex = 1
+        Me.picLogic.TabStop = False
+        '
         'rtxbox
         '
         Me.rtxbox.Location = New System.Drawing.Point(28, 446)
@@ -497,25 +516,6 @@ Partial Class FrmBasicOperations
         Me.pnlFirst.Name = "pnlFirst"
         Me.pnlFirst.Size = New System.Drawing.Size(1242, 684)
         Me.pnlFirst.TabIndex = 6
-        '
-        'picLogic
-        '
-        Me.picLogic.Image = Global.App_UNAD.App.My.Resources.Resources.operadores
-        Me.picLogic.Location = New System.Drawing.Point(15, 47)
-        Me.picLogic.Name = "picLogic"
-        Me.picLogic.Size = New System.Drawing.Size(514, 298)
-        Me.picLogic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picLogic.TabIndex = 1
-        Me.picLogic.TabStop = False
-        '
-        'AxMedia
-        '
-        Me.AxMedia.Enabled = True
-        Me.AxMedia.Location = New System.Drawing.Point(8, 103)
-        Me.AxMedia.Name = "AxMedia"
-        Me.AxMedia.OcxState = CType(resources.GetObject("AxMedia.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxMedia.Size = New System.Drawing.Size(502, 323)
-        Me.AxMedia.TabIndex = 6
         '
         'FrmBasicOperations
         '
@@ -541,10 +541,10 @@ Partial Class FrmBasicOperations
         CType(Me.txtHeight, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtWeight, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.pnlFirst.ResumeLayout(False)
-        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlFirst.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
