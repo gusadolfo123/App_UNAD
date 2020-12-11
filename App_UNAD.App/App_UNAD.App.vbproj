@@ -123,10 +123,34 @@
     <Compile Include="Data\Student.vb">
       <DependentUpon>ModelApp.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormPDF.Designer.vb">
+      <DependentUpon>FormPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPrin.Designer.vb">
+      <DependentUpon>FormPrin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPrin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormQuizCond.Designer.vb">
+      <DependentUpon>FormQuizCond.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormQuizCond.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmBasicOperations.Designer.vb">
       <DependentUpon>FrmBasicOperations.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmBasicOperations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCycles.Designer.vb">
+      <DependentUpon>FrmCycles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCycles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmHome.Designer.vb">
@@ -170,8 +194,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\FormPDF.resx">
+      <DependentUpon>FormPDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPrin.resx">
+      <DependentUpon>FormPrin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormQuizCond.resx">
+      <DependentUpon>FormQuizCond.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmBasicOperations.resx">
       <DependentUpon>FrmBasicOperations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCycles.resx">
+      <DependentUpon>FrmCycles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHome.resx">
       <DependentUpon>FrmHome.vb</DependentUpon>
@@ -213,6 +249,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Recursos\ManualVB.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\cerrar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -255,9 +294,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Audios\Operadores_Logicos.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Data\ModelApp.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelApp.edmx</DependentUpon>
@@ -268,6 +304,19 @@
       <DependentUpon>ModelApp.edmx</DependentUpon>
       <LastGenOutput>ModelApp.vb</LastGenOutput>
     </Content>
+    <Content Include="Recursos\Video1.3gp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\Video2.3gp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Imagen1.png" />
+    <None Include="Resources\Imagen2.png" />
+    <None Include="Resources\Imagen3.jpg" />
+    <None Include="Resources\Imagen4.jpg" />
+    <None Include="Resources\Imagen5.jpg" />
+    <None Include="Resources\Imagen6.jpg" />
+    <None Include="Resources\Audio1.wav" />
     <Content Include="Videos\Operadores_Logicos.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -277,6 +326,23 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="AxWMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>

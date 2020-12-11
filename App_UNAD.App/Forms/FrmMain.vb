@@ -92,11 +92,13 @@ Public Class FrmMain
     End Sub
 
     Private Sub btnConditional_Click(sender As Object, e As EventArgs) Handles btnConditional.Click
-
+        ActivateButton(sender, Color.White)
+        OpenFormChild(New FormPrin())
     End Sub
 
     Private Sub btnIterable_Click(sender As Object, e As EventArgs) Handles btnIterable.Click
-
+        ActivateButton(sender, Color.White)
+        OpenFormChild(New FrmCycles())
     End Sub
 
     Private Sub pictureBox1_Click(sender As Object, e As EventArgs) Handles pictureBox1.Click

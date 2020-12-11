@@ -25,14 +25,6 @@ Public Class FrmBasicOperations
         AxMedia.Ctlcontrols.play()
     End Sub
 
-    Private Sub btnPLayAudio_Click(sender As Object, e As EventArgs) Handles btnPLayAudio.Click
-        backmusic.Play()
-    End Sub
-
-    Private Sub btnStopAudio_Click(sender As Object, e As EventArgs) Handles btnStopAudio.Click
-        backmusic.Stop()
-    End Sub
-
     Private Sub picLogic_MouseHover(sender As Object, e As EventArgs)
         lblImagenes.BackColor = Color.Red
     End Sub

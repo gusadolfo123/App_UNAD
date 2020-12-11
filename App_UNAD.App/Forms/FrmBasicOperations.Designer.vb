@@ -51,7 +51,6 @@ Partial Class FrmBasicOperations
         Me.Label10 = New System.Windows.Forms.Label()
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.AxMedia = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblVideo = New System.Windows.Forms.Label()
         Me.btnContinuousVideo = New System.Windows.Forms.Button()
@@ -60,13 +59,10 @@ Partial Class FrmBasicOperations
         Me.btnStopVideo = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblImagenes = New System.Windows.Forms.Label()
-        Me.picLogic = New System.Windows.Forms.PictureBox()
         Me.rtxbox = New System.Windows.Forms.RichTextBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnPLayAudio = New System.Windows.Forms.Button()
-        Me.btnStopAudio = New System.Windows.Forms.Button()
-        Me.lblAudio = New System.Windows.Forms.Label()
         Me.pnlFirst = New System.Windows.Forms.Panel()
+        Me.picLogic = New System.Windows.Forms.PictureBox()
+        Me.AxMedia = New AxWMPLib.AxWindowsMediaPlayer()
         Me.pnlExamples.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.pnlExercise3.SuspendLayout()
@@ -74,12 +70,11 @@ Partial Class FrmBasicOperations
         Me.pnlExercise2.SuspendLayout()
         CType(Me.txtHeight, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtWeight, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
         Me.pnlFirst.SuspendLayout()
+        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -90,7 +85,7 @@ Partial Class FrmBasicOperations
         Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.Location = New System.Drawing.Point(0, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(1157, 82)
+        Me.lblTitle.Size = New System.Drawing.Size(1242, 82)
         Me.lblTitle.TabIndex = 5
         Me.lblTitle.Text = "Operaciones básicas de programación"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -106,7 +101,7 @@ Partial Class FrmBasicOperations
         Me.pnlExamples.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlExamples.Location = New System.Drawing.Point(0, 766)
         Me.pnlExamples.Name = "pnlExamples"
-        Me.pnlExamples.Size = New System.Drawing.Size(1157, 532)
+        Me.pnlExamples.Size = New System.Drawing.Size(1242, 532)
         Me.pnlExamples.TabIndex = 7
         '
         'Panel1
@@ -117,13 +112,12 @@ Partial Class FrmBasicOperations
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 430)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1157, 90)
+        Me.Panel1.Size = New System.Drawing.Size(1242, 90)
         Me.Panel1.TabIndex = 11
         '
         'BtnInitTest
         '
         Me.BtnInitTest.BackColor = System.Drawing.Color.White
-        Me.BtnInitTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnInitTest.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.BtnInitTest.Location = New System.Drawing.Point(28, 17)
         Me.BtnInitTest.Name = "BtnInitTest"
@@ -159,7 +153,7 @@ Partial Class FrmBasicOperations
         Me.pnlExercise3.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlExercise3.Location = New System.Drawing.Point(0, 321)
         Me.pnlExercise3.Name = "pnlExercise3"
-        Me.pnlExercise3.Size = New System.Drawing.Size(1157, 109)
+        Me.pnlExercise3.Size = New System.Drawing.Size(1242, 109)
         Me.pnlExercise3.TabIndex = 10
         '
         'label9
@@ -204,7 +198,6 @@ Partial Class FrmBasicOperations
         'btnExercise3Result
         '
         Me.btnExercise3Result.BackColor = System.Drawing.Color.White
-        Me.btnExercise3Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExercise3Result.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnExercise3Result.Location = New System.Drawing.Point(586, 65)
         Me.btnExercise3Result.Name = "btnExercise3Result"
@@ -270,7 +263,7 @@ Partial Class FrmBasicOperations
         Me.richTextBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.richTextBox2.Location = New System.Drawing.Point(0, 250)
         Me.richTextBox2.Name = "richTextBox2"
-        Me.richTextBox2.Size = New System.Drawing.Size(1157, 71)
+        Me.richTextBox2.Size = New System.Drawing.Size(1242, 71)
         Me.richTextBox2.TabIndex = 9
         Me.richTextBox2.Text = "" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "Programa que haga la conversión de:" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "Metro cubico, Decímetro cubico, Centímetro" &
     " cubico" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "Convertir a: Litro, Decilitro, Centilitro"
@@ -289,7 +282,7 @@ Partial Class FrmBasicOperations
         Me.pnlExercise2.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlExercise2.Location = New System.Drawing.Point(0, 137)
         Me.pnlExercise2.Name = "pnlExercise2"
-        Me.pnlExercise2.Size = New System.Drawing.Size(1157, 113)
+        Me.pnlExercise2.Size = New System.Drawing.Size(1242, 113)
         Me.pnlExercise2.TabIndex = 8
         '
         'txtHeight
@@ -311,7 +304,6 @@ Partial Class FrmBasicOperations
         'btnExercise2Result
         '
         Me.btnExercise2Result.BackColor = System.Drawing.Color.White
-        Me.btnExercise2Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExercise2Result.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnExercise2Result.Location = New System.Drawing.Point(457, 66)
         Me.btnExercise2Result.Name = "btnExercise2Result"
@@ -377,7 +369,7 @@ Partial Class FrmBasicOperations
         Me.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.richTextBox1.Location = New System.Drawing.Point(0, 66)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(1157, 71)
+        Me.richTextBox1.Size = New System.Drawing.Size(1242, 71)
         Me.richTextBox1.TabIndex = 7
         Me.richTextBox1.Text = "" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "Programa para calcular la masa corporal de una persona." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & "IMC = Peso (kg) / alt" &
     "ura (m)2"
@@ -390,19 +382,10 @@ Partial Class FrmBasicOperations
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1157, 66)
+        Me.Label1.Size = New System.Drawing.Size(1242, 66)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Ejercicios"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AxMedia
-        '
-        Me.AxMedia.Enabled = True
-        Me.AxMedia.Location = New System.Drawing.Point(8, 103)
-        Me.AxMedia.Name = "AxMedia"
-        Me.AxMedia.OcxState = CType(resources.GetObject("AxMedia.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxMedia.Size = New System.Drawing.Size(502, 323)
-        Me.AxMedia.TabIndex = 6
         '
         'Panel4
         '
@@ -432,48 +415,55 @@ Partial Class FrmBasicOperations
         '
         'btnContinuousVideo
         '
+        Me.btnContinuousVideo.BackColor = System.Drawing.Color.White
+        Me.btnContinuousVideo.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnContinuousVideo.Location = New System.Drawing.Point(395, 47)
         Me.btnContinuousVideo.Name = "btnContinuousVideo"
         Me.btnContinuousVideo.Size = New System.Drawing.Size(118, 50)
         Me.btnContinuousVideo.TabIndex = 4
         Me.btnContinuousVideo.Text = "Continuar"
-        Me.btnContinuousVideo.UseVisualStyleBackColor = True
+        Me.btnContinuousVideo.UseVisualStyleBackColor = False
         '
         'btnPauseVideo
         '
+        Me.btnPauseVideo.BackColor = System.Drawing.Color.White
+        Me.btnPauseVideo.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnPauseVideo.Location = New System.Drawing.Point(135, 47)
         Me.btnPauseVideo.Name = "btnPauseVideo"
         Me.btnPauseVideo.Size = New System.Drawing.Size(118, 50)
         Me.btnPauseVideo.TabIndex = 3
         Me.btnPauseVideo.Text = "Pausar"
-        Me.btnPauseVideo.UseVisualStyleBackColor = True
+        Me.btnPauseVideo.UseVisualStyleBackColor = False
         '
         'btnPlayVideo
         '
+        Me.btnPlayVideo.BackColor = System.Drawing.Color.White
+        Me.btnPlayVideo.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnPlayVideo.Location = New System.Drawing.Point(4, 47)
         Me.btnPlayVideo.Name = "btnPlayVideo"
         Me.btnPlayVideo.Size = New System.Drawing.Size(118, 50)
         Me.btnPlayVideo.TabIndex = 2
         Me.btnPlayVideo.Text = "Iniciar"
-        Me.btnPlayVideo.UseVisualStyleBackColor = True
+        Me.btnPlayVideo.UseVisualStyleBackColor = False
         '
         'btnStopVideo
         '
+        Me.btnStopVideo.BackColor = System.Drawing.Color.White
+        Me.btnStopVideo.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnStopVideo.Location = New System.Drawing.Point(266, 47)
         Me.btnStopVideo.Name = "btnStopVideo"
         Me.btnStopVideo.Size = New System.Drawing.Size(118, 50)
         Me.btnStopVideo.TabIndex = 1
         Me.btnStopVideo.Text = "Parar"
-        Me.btnStopVideo.UseVisualStyleBackColor = True
+        Me.btnStopVideo.UseVisualStyleBackColor = False
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.lblImagenes)
         Me.Panel2.Controls.Add(Me.picLogic)
-        Me.Panel2.Controls.Add(Me.rtxbox)
         Me.Panel2.Location = New System.Drawing.Point(565, 27)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(547, 621)
+        Me.Panel2.Size = New System.Drawing.Size(547, 394)
         Me.Panel2.TabIndex = 10
         '
         'lblImagenes
@@ -489,6 +479,25 @@ Partial Class FrmBasicOperations
         Me.lblImagenes.Text = "Imagenes y Texto"
         Me.lblImagenes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'rtxbox
+        '
+        Me.rtxbox.Location = New System.Drawing.Point(28, 446)
+        Me.rtxbox.Name = "rtxbox"
+        Me.rtxbox.Size = New System.Drawing.Size(1084, 211)
+        Me.rtxbox.TabIndex = 0
+        Me.rtxbox.Text = resources.GetString("rtxbox.Text")
+        '
+        'pnlFirst
+        '
+        Me.pnlFirst.Controls.Add(Me.Panel2)
+        Me.pnlFirst.Controls.Add(Me.Panel4)
+        Me.pnlFirst.Controls.Add(Me.rtxbox)
+        Me.pnlFirst.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlFirst.Location = New System.Drawing.Point(0, 82)
+        Me.pnlFirst.Name = "pnlFirst"
+        Me.pnlFirst.Size = New System.Drawing.Size(1242, 684)
+        Me.pnlFirst.TabIndex = 6
+        '
         'picLogic
         '
         Me.picLogic.Image = Global.App_UNAD.App.My.Resources.Resources.operadores
@@ -499,72 +508,21 @@ Partial Class FrmBasicOperations
         Me.picLogic.TabIndex = 1
         Me.picLogic.TabStop = False
         '
-        'rtxbox
+        'AxMedia
         '
-        Me.rtxbox.Location = New System.Drawing.Point(15, 351)
-        Me.rtxbox.Name = "rtxbox"
-        Me.rtxbox.Size = New System.Drawing.Size(514, 258)
-        Me.rtxbox.TabIndex = 0
-        Me.rtxbox.Text = resources.GetString("rtxbox.Text")
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.btnPLayAudio)
-        Me.Panel3.Controls.Add(Me.btnStopAudio)
-        Me.Panel3.Controls.Add(Me.lblAudio)
-        Me.Panel3.Location = New System.Drawing.Point(29, 435)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(512, 213)
-        Me.Panel3.TabIndex = 11
-        '
-        'btnPLayAudio
-        '
-        Me.btnPLayAudio.Location = New System.Drawing.Point(5, 48)
-        Me.btnPLayAudio.Name = "btnPLayAudio"
-        Me.btnPLayAudio.Size = New System.Drawing.Size(253, 50)
-        Me.btnPLayAudio.TabIndex = 8
-        Me.btnPLayAudio.Text = "Iniciar"
-        Me.btnPLayAudio.UseVisualStyleBackColor = True
-        '
-        'btnStopAudio
-        '
-        Me.btnStopAudio.Location = New System.Drawing.Point(261, 48)
-        Me.btnStopAudio.Name = "btnStopAudio"
-        Me.btnStopAudio.Size = New System.Drawing.Size(245, 50)
-        Me.btnStopAudio.TabIndex = 7
-        Me.btnStopAudio.Text = "Parar"
-        Me.btnStopAudio.UseVisualStyleBackColor = True
-        '
-        'lblAudio
-        '
-        Me.lblAudio.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.lblAudio.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lblAudio.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblAudio.ForeColor = System.Drawing.Color.White
-        Me.lblAudio.Location = New System.Drawing.Point(0, 0)
-        Me.lblAudio.Name = "lblAudio"
-        Me.lblAudio.Size = New System.Drawing.Size(512, 42)
-        Me.lblAudio.TabIndex = 6
-        Me.lblAudio.Text = "Audio"
-        Me.lblAudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlFirst
-        '
-        Me.pnlFirst.Controls.Add(Me.Panel3)
-        Me.pnlFirst.Controls.Add(Me.Panel2)
-        Me.pnlFirst.Controls.Add(Me.Panel4)
-        Me.pnlFirst.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlFirst.Location = New System.Drawing.Point(0, 82)
-        Me.pnlFirst.Name = "pnlFirst"
-        Me.pnlFirst.Size = New System.Drawing.Size(1157, 684)
-        Me.pnlFirst.TabIndex = 6
+        Me.AxMedia.Enabled = True
+        Me.AxMedia.Location = New System.Drawing.Point(8, 103)
+        Me.AxMedia.Name = "AxMedia"
+        Me.AxMedia.OcxState = CType(resources.GetObject("AxMedia.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxMedia.Size = New System.Drawing.Size(502, 323)
+        Me.AxMedia.TabIndex = 6
         '
         'FrmBasicOperations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1174, 812)
+        Me.ClientSize = New System.Drawing.Size(1259, 812)
         Me.Controls.Add(Me.pnlExamples)
         Me.Controls.Add(Me.pnlFirst)
         Me.Controls.Add(Me.lblTitle)
@@ -582,12 +540,11 @@ Partial Class FrmBasicOperations
         Me.pnlExercise2.PerformLayout()
         CType(Me.txtHeight, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtWeight, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
         Me.pnlFirst.ResumeLayout(False)
+        CType(Me.picLogic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxMedia, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -618,7 +575,6 @@ Partial Class FrmBasicOperations
     Private WithEvents richTextBox1 As RichTextBox
     Friend WithEvents AxMedia As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents Panel4 As Panel
-    Private WithEvents lblVideo As Label
     Friend WithEvents btnContinuousVideo As Button
     Friend WithEvents btnPauseVideo As Button
     Friend WithEvents btnPlayVideo As Button
@@ -627,12 +583,9 @@ Partial Class FrmBasicOperations
     Private WithEvents lblImagenes As Label
     Friend WithEvents picLogic As PictureBox
     Friend WithEvents rtxbox As RichTextBox
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnPLayAudio As Button
-    Friend WithEvents btnStopAudio As Button
-    Private WithEvents lblAudio As Label
     Friend WithEvents pnlFirst As Panel
     Private WithEvents Panel1 As Panel
     Private WithEvents BtnInitTest As Button
     Private WithEvents Label15 As Label
+    Private WithEvents lblVideo As Label
 End Class

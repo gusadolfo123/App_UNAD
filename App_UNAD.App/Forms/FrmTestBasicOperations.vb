@@ -23,12 +23,54 @@
             timer1.Enabled = False
             timer1.Stop()
             MessageBox.Show("Finalizo el tiempo")
-            ' EvaluateTest()
+            If EvaluateTest() Then
+                MessageBox.Show("Aprobaste el Test Puedes ver el siguiente Tema")
+
+            End If
         End If
     End Sub
 
-    Private Sub EvaluateTest()
+    Private Function EvaluateTest() As Boolean
+        Dim total = 0
+        If Q1Op4.Checked Then
+            total += 1
+        End If
+        If Q2Op1.Checked Then
+            total += 1
+        End If
+        If Q3Op2.Checked Then
+            total += 1
+        End If
+        If Q4Op2.Checked Then
+            total += 1
+        End If
+        If Q5Op2.Checked Then
+            total += 1
+        End If
+        If Q6Op2.Checked Then
+            total += 1
+        End If
+        If Q7Op3.Checked And Q7Op4.Checked Then
+            total += 1
+        End If
+        If Q8Op4.Checked Then
+            total += 1
+        End If
+        If Q9Op3.Checked Then
+            total += 1
+        End If
+        If Q10Op4.Checked Then
+            total += 1
+        End If
+
+        If total >= 6 Then
+            Return True
+        End If
+
+        Return False
+    End Function
+
+    Private Sub btnFinish_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
 
     End Sub
-
 End Class
