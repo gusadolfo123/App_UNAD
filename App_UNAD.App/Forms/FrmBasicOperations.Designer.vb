@@ -522,7 +522,7 @@ Partial Class FrmBasicOperations
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1259, 812)
+        Me.ClientSize = New System.Drawing.Size(1259, 821)
         Me.Controls.Add(Me.pnlExamples)
         Me.Controls.Add(Me.pnlFirst)
         Me.Controls.Add(Me.lblTitle)

@@ -127,4 +127,45 @@ Public Class FormPrin
         childForm.Show()
     End Sub
 
+    Private Sub EjemploQuizToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EjemploQuizToolStripMenuItem.Click
+
+        Dim childForm = New FormEjmQuiz()
+        Dim _currentChildForm = Me
+        Dim myPanel As Panel = Me.Parent
+
+        If _currentChildForm IsNot Nothing Then
+            _currentChildForm.Close()
+        End If
+
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        myPanel.Controls.Add(childForm)
+        myPanel.Tag = childForm
+        childForm.BringToFront()
+        childForm.Width = myPanel.Width
+        childForm.Show()
+
+    End Sub
+
+    Private Sub EjemploClaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EjemploClaveToolStripMenuItem.Click
+
+        Dim childForm = New FormEjmValidarClave()
+        Dim _currentChildForm = Me
+        Dim myPanel As Panel = Me.Parent
+
+        If _currentChildForm IsNot Nothing Then
+            _currentChildForm.Close()
+        End If
+
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        myPanel.Controls.Add(childForm)
+        myPanel.Tag = childForm
+        childForm.BringToFront()
+        childForm.Width = myPanel.Width
+        childForm.Show()
+
+    End Sub
 End Class

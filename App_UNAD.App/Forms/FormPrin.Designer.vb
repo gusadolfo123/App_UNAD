@@ -51,6 +51,10 @@ Partial Class FormPrin
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BtnQuiz = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.EjemplosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EjemploQuizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EjemploClaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -60,6 +64,7 @@ Partial Class FormPrin
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button12
@@ -349,6 +354,34 @@ Partial Class FormPrin
         Me.BtnQuiz.Text = "Presentar Examen"
         Me.BtnQuiz.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EjemplosToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1109, 24)
+        Me.MenuStrip1.TabIndex = 23
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'EjemplosToolStripMenuItem
+        '
+        Me.EjemplosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EjemploQuizToolStripMenuItem, Me.EjemploClaveToolStripMenuItem})
+        Me.EjemplosToolStripMenuItem.Name = "EjemplosToolStripMenuItem"
+        Me.EjemplosToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.EjemplosToolStripMenuItem.Text = "Ejemplos"
+        '
+        'EjemploQuizToolStripMenuItem
+        '
+        Me.EjemploQuizToolStripMenuItem.Name = "EjemploQuizToolStripMenuItem"
+        Me.EjemploQuizToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EjemploQuizToolStripMenuItem.Text = "Ejemplo Quiz"
+        '
+        'EjemploClaveToolStripMenuItem
+        '
+        Me.EjemploClaveToolStripMenuItem.Name = "EjemploClaveToolStripMenuItem"
+        Me.EjemploClaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EjemploClaveToolStripMenuItem.Text = "Ejemplo Clave"
+        '
         'FormPrin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -361,6 +394,8 @@ Partial Class FormPrin
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormPrin"
         Me.Text = "FormPrin"
         Me.GroupBox6.ResumeLayout(False)
@@ -374,6 +409,8 @@ Partial Class FormPrin
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -406,4 +443,8 @@ Partial Class FormPrin
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents BtnQuiz As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents EjemplosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EjemploQuizToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EjemploClaveToolStripMenuItem As ToolStripMenuItem
 End Class
